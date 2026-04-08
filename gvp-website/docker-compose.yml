@@ -18,5 +18,5 @@ services:
       - "logging.service=student-tracker"
 
 networks:
-  traefik-proxy:
+  proxy:
     external: true
