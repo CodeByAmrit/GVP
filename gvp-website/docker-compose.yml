@@ -4,18 +4,18 @@ services:
     container_name: gvp-institution-portal
     restart: unless-stopped
     networks:
-      - traefik-proxy
+      - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.edu.rule=Host(`gvp.amritsharma.dev`)"
-      - "traefik.http.routers.edu.entrypoints=websecure"
-      - "traefik.http.routers.edu.tls.certresolver=letsencrypt"
-      - "traefik.http.services.edu.loadbalancer.server.port=5000"
-      - "traefik.http.services.edu.loadbalancer.sticky.cookie=true"
-      - "traefik.http.services.edu.loadbalancer.sticky.cookie.name=student_session"
-      - "traefik.http.services.edu.loadbalancer.healthcheck.path=/health"
-      - "traefik.http.services.edu.loadbalancer.healthcheck.interval=30s"
-      - "logging.service=student-tracker"
+      - "traefik.http.routers.gvp.rule=Host(`gvp.amritsharma.dev`)"
+      - "traefik.http.routers.gvp.entrypoints=websecure"
+      - "traefik.http.routers.gvp.tls.certresolver=letsencrypt"
+      - "traefik.http.services.gvp.loadbalancer.server.port=5000"
+      - "traefik.http.services.gvp.loadbalancer.sticky.cookie=true"
+      - "traefik.http.services.gvp.loadbalancer.sticky.cookie.name=student_session"
+      - "traefik.http.services.gvp.loadbalancer.healthcheck.path=/health"
+      - "traefik.http.services.gvp.loadbalancer.healthcheck.interval=30s"
+      - "logging.service=gvp"
 
 networks:
   proxy:
