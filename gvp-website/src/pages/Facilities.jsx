@@ -8,28 +8,28 @@ const Facilities = () => {
     {
       title: "ICT & Digital Labs",
       desc: "State-of-the-art computing modules with high-speed internet and AI-ready workstations.",
-      img: "/src/assets/images/infrastructure/lab.jpg",
+      img: "/images/infrastructure/lab.jpg",
       span: "lg:col-span-7",
       icon: Binary
     },
     {
       title: "Modern HBSE Wing",
       desc: "Dedicated primary and senior wings designed for standard-compliant academic focus.",
-      img: "/src/assets/images/infrastructure/upper-primary.avif",
+      img: "/images/infrastructure/upper-primary.avif",
       span: "lg:col-span-5",
       icon: Monitor
     },
     {
       title: "Green Sports Arena",
       desc: "Expansive outdoor play area with professional coaching for cricket, football, and athletics.",
-      img: "/src/assets/images/infrastructure/building.jpg",
+      img: "/images/infrastructure/building.jpg",
       span: "lg:col-span-5",
       icon: Trophy
     },
     {
       title: "Activity Center",
       desc: "A creative hub for performing arts, music, and cultural development.",
-      img: "/src/assets/images/infrastructure/building.webp",
+      img: "/images/infrastructure/building.webp",
       span: "lg:col-span-7",
       icon: Music
     }

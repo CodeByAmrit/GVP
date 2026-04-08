@@ -5,22 +5,22 @@ import SectionTitle from '../components/SectionTitle';
 
 const About = () => {
   const milestones = [
-    { year: "1990", title: "Founding Foundation", desc: "The first stone laying of the Gyan Vidya Peeth and the national of the giant foundation.", img: "/src/assets/images/infrastructure/building.jpg" },
-    { year: "2005", title: "Expansion & New Campus", desc: "Gyan Vidya Peeth is the most unique new campus and new wing is international building architecture.", img: "/src/assets/images/infrastructure/building.webp" },
-    { year: "2015", title: "Global Recognition", desc: "Students share an international conference and major students study in the international campuses.", img: "/src/assets/images/toppers/jiya.jpg" },
-    { year: "2024", title: "Future-Ready Curriculum", desc: "Robotics lab and advanced technical ecosystems are introduced to develop AI and robotics solution studies.", img: "/src/assets/images/infrastructure/lab.jpg" }
+    { year: "1990", title: "Founding Foundation", desc: "The first stone laying of the Gyan Vidya Peeth and the national of the giant foundation.", img: "/images/infrastructure/building.jpg" },
+    { year: "2005", title: "Expansion & New Campus", desc: "Gyan Vidya Peeth is the most unique new campus and new wing is international building architecture.", img: "/images/infrastructure/building.webp" },
+    { year: "2015", title: "Global Recognition", desc: "Students share an international conference and major students study in the international campuses.", img: "/images/toppers/jiya.jpg" },
+    { year: "2024", title: "Future-Ready Curriculum", desc: "Robotics lab and advanced technical ecosystems are introduced to develop AI and robotics solution studies.", img: "/images/infrastructure/lab.jpg" }
   ];
 
   const leadership = [
     {
       name: "Dr. Rajesh Sharma",
       role: "Principal",
-      img: "/src/assets/images/toppers/jiya.jpg", // Placeholder - Needs actual profile
+      img: "/images/toppers/jiya.jpg", // Placeholder - Needs actual profile
       bio: "Dr. Rajesh Sharma is a veteran educationist who has shaped leader and students for over two decades. His vision is defined by academic excellence, innovation, and modern standards which integrates traditional values with modern learning styles. He leads with the firm belief that the individual growth of each student and professional is the unique concern of our management."
     },
-    { name: "Mrs. Indira Devi", role: "Board Member", img: "/src/assets/images/toppers/jiya.jpg", sub: "Mrs. Indira Devi (Chairperson) leads with focus and determination toward excellence across all institutional areas." },
-    { name: "Mr. Arjun Kapoor", role: "Board Member", img: "/src/assets/images/toppers/jiya.jpg", sub: "Mr. Arjun Kapoor (Director) is a visionary leader steering toward better student management and results." },
-    { name: "Prof. Vikram Singh", role: "Board Member", img: "/src/assets/images/toppers/jiya.jpg", sub: "Prof. Vikram Singh (Advisory) is a professional academician who focuses on new educational strategies." }
+    { name: "Mrs. Indira Devi", role: "Board Member", img: "/images/toppers/jiya.jpg", sub: "Mrs. Indira Devi (Chairperson) leads with focus and determination toward excellence across all institutional areas." },
+    { name: "Mr. Arjun Kapoor", role: "Board Member", img: "/images/toppers/jiya.jpg", sub: "Mr. Arjun Kapoor (Director) is a visionary leader steering toward better student management and results." },
+    { name: "Prof. Vikram Singh", role: "Board Member", img: "/images/toppers/jiya.jpg", sub: "Prof. Vikram Singh (Advisory) is a professional academician who focuses on new educational strategies." }
   ];
 
   return (
@@ -28,7 +28,7 @@ const About = () => {
       {/* 1. Vision & Mission Hero */}
       <section className="relative h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/src/assets/images/infrastructure/building.jpg" className="w-full h-full object-cover" alt="Heritage" />
+          <img src="/images/infrastructure/building.jpg" className="w-full h-full object-cover" alt="Heritage" />
           <div className="absolute inset-0 bg-primary/40 mix-blend-multiply" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-white">

@@ -13,17 +13,17 @@ const Home = () => {
 
   const heroSlides = [
     {
-      img: "/src/assets/images/infrastructure/building.jpg",
+      img: "/images/infrastructure/building.jpg",
       title: "Future Ready.",
       highlight: "Value Grounded."
     },
     {
-      img: "/src/assets/images/infrastructure/building.webp",
+      img: "/images/infrastructure/building.webp",
       title: "Technical Revolution.",
       highlight: "Academic Excellence."
     },
     {
-      img: "/src/assets/images/infrastructure/upper-primary.avif",
+      img: "/images/infrastructure/upper-primary.avif",
       title: "Leading with.",
       highlight: "Innovation."
     }
@@ -115,7 +115,7 @@ const Home = () => {
               >
                 <div className="absolute -inset-4 bg-primary/20 blur-3xl opacity-20 group-hover:opacity-40 transition-opacity" />
                 <div className="relative bg-secondary/10 rounded-[3rem] p-8 border-2 border-primary/5 overflow-hidden">
-                  <img src="/src/assets/images/toppers/jiya.jpg" alt="Jiya Kumari" className="w-full h-auto rounded-[2rem] shadow-2xl transition duration-700 group-hover:scale-105" />
+                  <img src="/images/toppers/jiya.jpg" alt="Jiya Kumari" className="w-full h-auto rounded-[2rem] shadow-2xl transition duration-700 group-hover:scale-105" />
                   <div className="absolute top-12 right-12 bg-primary text-secondary px-8 py-4 rounded-full font-black shadow-2xl italic tracking-tighter text-xl scale-90 md:scale-100">
                     STATE RANK 8 (98%)
                   </div>
@@ -247,7 +247,7 @@ const Home = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 className="md:col-span-12 lg:col-span-7 relative group overflow-hidden rounded-[3rem] shadow-xl"
               >
-                <img src="/src/assets/images/infrastructure/lab.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="ICT Labs" />
+                <img src="/images/infrastructure/lab.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="ICT Labs" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                 <div className="absolute bottom-10 left-10 text-white">
                   <h4 className="text-3xl font-black mb-2 tracking-tight">ICT & Digital Labs</h4>
@@ -264,7 +264,7 @@ const Home = () => {
                 transition={{ delay: 0.1 }}
                 className="md:col-span-6 lg:col-span-5 relative group overflow-hidden rounded-[3rem] shadow-xl"
               >
-                <img src="/src/assets/images/infrastructure/upper-primary.avif" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="HBSE Wing" />
+                <img src="/images/infrastructure/upper-primary.avif" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="HBSE Wing" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                 <div className="absolute bottom-10 left-10 text-white">
                   <h4 className="text-3xl font-black mb-2 tracking-tight">Modern HBSE Wing</h4>
@@ -281,7 +281,7 @@ const Home = () => {
                 transition={{ delay: 0.2 }}
                 className="md:col-span-6 lg:col-span-5 relative group overflow-hidden rounded-[3rem] shadow-xl"
               >
-                <img src="/src/assets/images/infrastructure/building.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sports Arena" />
+                <img src="/images/infrastructure/building.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sports Arena" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                 <div className="absolute bottom-10 left-10 text-white">
                   <h4 className="text-3xl font-black mb-2 tracking-tight">Green Sports Arena</h4>
@@ -298,7 +298,7 @@ const Home = () => {
                 transition={{ delay: 0.3 }}
                 className="md:col-span-12 lg:col-span-7 relative group overflow-hidden rounded-[3rem] shadow-xl"
               >
-                <img src="/src/assets/images/infrastructure/building.webp" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Activity Center" />
+                <img src="/images/infrastructure/building.webp" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Activity Center" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                 <div className="absolute bottom-10 left-10 text-white">
                   <h4 className="text-3xl font-black mb-2 tracking-tight">Activity Center</h4>

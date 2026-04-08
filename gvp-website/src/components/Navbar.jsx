@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/icons/logo.webp';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +41,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-4 group">
             <div className="bg-white/10 p-1 rounded-lg backdrop-blur-sm border border-white/10">
               <img
-                src={logo}
+                src="/icons/logo.webp"
                 alt="GVP Logo"
                 className="h-10 md:h-12 "
               />
