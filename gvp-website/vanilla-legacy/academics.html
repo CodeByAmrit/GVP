@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.webp">
+    <title>Academics | GVP School Sonipat - Excellence in HBSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="bg-slate-hero">
+
+    <!-- Header (Consistent) -->
+    <header id="main-nav" class="fixed top-0 w-full z-50 py-4 glass-nav">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/icons/logo.webp" alt="GVP Logo" class="h-10 w-auto">
+                <h1 class="font-heading font-black text-primary text-lg leading-none">GYAN VIDYA PEETH</h1>
+            </a>
+            <nav class="hidden lg:flex gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="academics.html" class="nav-link active">Academics</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+            <div class="flex items-center gap-4">
+                <a href="admissions.html" class="hidden md:block btn-gold text-xs px-6 py-2.5">Admissions Opened</a>
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-primary z-[60] flex flex-col items-center justify-center translate-y-full transition-transform duration-500 ease-in-out">
+        <button id="close-menu" class="absolute top-8 right-8 text-secondary">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <nav class="flex flex-col gap-8 text-center">
+            <a href="index.html" class="text-3xl font-heading font-black text-white/70">Home</a>
+            <a href="about.html" class="text-3xl font-heading font-black text-white/70">About Us</a>
+            <a href="academics.html" class="text-3xl font-heading font-black text-white">Academics</a>
+            <a href="facilities.html" class="text-3xl font-heading font-black text-white/70">Facilities</a>
+            <a href="admissions.html" class="text-3xl font-heading font-black text-white/70">Admissions</a>
+            <a href="contact.html" class="text-3xl font-heading font-black text-white/70">Contact</a>
+        </nav>
+    </div>
+
+    <main class="pt-32">
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="max-w-4xl mx-auto text-center reveal">
+                    <h2 class="text-4xl md:text-6xl font-heading font-black text-primary mb-8 leading-tight">State Board Success. <br><span class="text-secondary italic">Global Perspective.</span></h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">At GVP, we don't just follow the HBSE curriculum; we master it. Our students consistently secure state ranks thanks to our "Value-Technical" pedagogical model.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wings Section -->
+        <section class="py-24">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="bg-white p-10 rounded-[3rem] shadow-xl border-l-8 border-primary reveal h-full">
+                        <i data-lucide="book" class="w-12 h-12 text-primary mb-8"></i>
+                        <h3 class="text-2xl font-black text-primary mb-4">Foundation Wing</h3>
+                        <p class="text-gray-500 text-sm italic">Nurturing curiosity from the start. Focus on motor skills, phonics, and initial numeracy.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-[3rem] shadow-xl border-l-8 border-secondary reveal h-full">
+                        <i data-lucide="binary" class="w-12 h-12 text-secondary mb-8"></i>
+                        <h3 class="text-2xl font-black text-primary mb-4">Middle Wing</h3>
+                        <p class="text-gray-500 text-sm italic">The technical revolution begins. Introduction to basics of coding, advanced science labs, and social values.</p>
+                    </div>
+                    <div class="bg-primary text-white p-10 rounded-[3rem] shadow-2xl reveal h-full">
+                        <i data-lucide="graduation-cap" class="w-12 h-12 text-secondary mb-8"></i>
+                        <h3 class="text-2xl font-black mb-4">Higher Wing</h3>
+                        <p class="text-white/60 text-sm italic">Mastering the Board. Intensive HBSE coaching for 10th and 12th with a 100% success record.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-12 text-center text-[10px] font-black tracking-[0.4em] text-gray-400">
+        GYAN VIDYA PEETH • SONIPAT • LEADERSHIP IN EDUCATION
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>if (typeof lucide !== "undefined") { lucide.createIcons(); }</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.webp">
+    <title>Facilities | GVP School Sonipat - Technical Revolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="bg-white">
+
+    <!-- Header (Consistent) -->
+    <header id="main-nav" class="fixed top-0 w-full z-50 py-4 glass-nav">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/icons/logo.webp" alt="GVP Logo" class="h-10 w-auto">
+                <h1 class="font-heading font-black text-primary text-lg leading-none">GYAN VIDYA PEETH</h1>
+            </a>
+            <nav class="hidden lg:flex gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link active">Facilities</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            <div class="flex items-center gap-4">
+                <a href="admissions.html" class="hidden md:block btn-gold text-xs px-6 py-2.5">Admissions Opened</a>
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-primary z-[60] flex flex-col items-center justify-center translate-y-full transition-transform duration-500 ease-in-out">
+        <button id="close-menu" class="absolute top-8 right-8 text-secondary">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <nav class="flex flex-col gap-8 text-center">
+            <a href="index.html" class="text-3xl font-heading font-black text-white/70">Home</a>
+            <a href="about.html" class="text-3xl font-heading font-black text-white/70">About Us</a>
+            <a href="academics.html" class="text-3xl font-heading font-black text-white/70">Academics</a>
+            <a href="facilities.html" class="text-3xl font-heading font-black text-white/70">Facilities</a>
+            <a href="admissions.html" class="text-3xl font-heading font-black text-white/70">Admissions</a>
+            <a href="contact.html" class="text-3xl font-heading font-black text-white/70">Contact</a>
+        </nav>
+    </div>
+
+
+    <main class="pt-32">
+        <section class="py-20 bg-slate-hero">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal">
+                    <div class="max-w-2xl">
+                        <span class="text-secondary font-black text-xs uppercase tracking-widest mb-4 block">Infrastructure</span>
+                        <h2 class="text-4xl md:text-6xl font-heading font-black text-primary leading-tight">Environment Built for <br><span class="text-secondary italic">Innovation.</span></h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Facility 1 -->
+                    <div class="reveal bg-white rounded-[3rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="assets/images/infrastructure/lab.jpg" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-primary/20"></div>
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-black text-primary mb-4">ICT & Tech Labs</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed italic">Fully high-speed computing environment for coding and digital literacy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facility 2 -->
+                    <div class="reveal bg-white rounded-[3rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform">
+                        <div class="h-64 bg-primary flex items-center justify-center relative">
+                            <i data-lucide="monitor" class="w-24 h-24 text-secondary/20"></i>
+                            <h4 class="absolute text-white font-black text-2xl">Smart Classes</h4>
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-black text-primary mb-4">Hybrid Classrooms</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed italic">Every classroom is a digital module, enabling smooth transition between offline and online resources.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facility 3 -->
+                    <div class="reveal bg-white rounded-[3rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform bg-secondary/5">
+                        <div class="h-64 bg-secondary flex items-center justify-center">
+                             <img src="assets/images/infrastructure/building.webp" class="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition duration-700">
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-black text-primary mb-4">Secure Campus</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed italic">CCTV monitored, safe environment with lush green playing areas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 text-center text-xs text-gray-400">
+        &copy; 2026 GVP School Sonipat | Values + Technology
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>if (typeof lucide !== "undefined") { lucide.createIcons(); }</script>
+</body>
+</html>

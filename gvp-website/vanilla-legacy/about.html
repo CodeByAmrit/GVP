@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.webp">
+    <title>About Us | GVP School Sonipat - Legacy & Leadership</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="bg-white">
+
+    <!-- Header (Consistent) -->
+    <header id="main-nav" class="fixed top-0 w-full z-50 py-4 glass-nav">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/icons/logo.webp" alt="GVP Logo" class="h-10 w-auto">
+                <h1 class="font-heading font-black text-primary text-lg">GYAN VIDYA PEETH</h1>
+            </a>
+            <nav class="hidden lg:flex gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="admissions.html" class="hidden md:block btn-gold text-xs px-6 py-2.5">Admissions Opened</a>
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-primary z-[60] flex flex-col items-center justify-center translate-y-full transition-transform duration-500 ease-in-out">
+        <button id="close-menu" class="absolute top-8 right-8 text-secondary">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <nav class="flex flex-col gap-8 text-center">
+            <a href="index.html" class="text-3xl font-heading font-black text-white/70">Home</a>
+            <a href="about.html" class="text-3xl font-heading font-black text-white">About Us</a>
+            <a href="academics.html" class="text-3xl font-heading font-black text-white/70">Academics</a>
+            <a href="facilities.html" class="text-3xl font-heading font-black text-white/70">Facilities</a>
+            <a href="admissions.html" class="text-3xl font-heading font-black text-white/70">Admissions</a>
+            <a href="contact.html" class="text-3xl font-heading font-black text-white/70">Contact</a>
+        </nav>
+    </div>
+
+    <main class="pt-32">
+        <!-- Legacy Section -->
+        <section class="py-20">
+             <div class="container mx-auto px-4 md:px-8">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <span class="text-secondary font-black text-xs tracking-widest uppercase mb-4 block border-l-4 border-secondary pl-3">Est. 2001</span>
+                        <h2 class="text-4xl md:text-6xl font-heading font-black text-primary leading-tight mb-8">
+                            A Legacy of <br><span class="text-secondary italic">Trust.</span>
+                        </h2>
+                        <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+                            <p>For over 24 years, Gyan Vidya Peeth has stood as a hallmark of educational excellence in Sonipat. Our commitment to HBSE standards, combined with our "Technical Revolution" philosophy, ensures our students are future-ready.</p>
+                            <p>We believe in the power of values. Innovation at GVP is always anchored in the rich heritage of our culture, creating leaders who are both technically adept and morally sound.</p>
+                        </div>
+                    </div>
+                    <div class="reveal relative">
+                        <img src="assets/images/infrastructure/building.jpg" class="rounded-[3rem] shadow-2xl">
+                        <div class="absolute -bottom-10 -left-10 bg-secondary p-8 rounded-3xl shadow-2xl hidden md:block">
+                            <p class="text-primary font-black text-4xl leading-none italic">24+</p>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-2">Years of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Leadership -->
+        <section class="py-24 bg-slate-hero">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="section-title text-center inline-block mx-auto mb-4">Our Leadership</h2>
+                    <p class="text-gray-500 mt-4">The visionaries steering the GVP mission.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl border border-primary/5 reveal transition hover:-translate-y-2">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <i data-lucide="user-cog" class="w-20 h-20 text-primary bg-primary/10 p-4 rounded-full"></i>
+                            <div>
+                                <h3 class="text-2xl font-black text-primary">Mr. Devender Singla</h3>
+                                <p class="text-secondary font-bold text-sm mb-4">Director | B.E., MBA</p>
+                                <p class="text-gray-500 text-sm italic">Focusing on long-term institutional growth and technical integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl border border-primary/5 reveal transition hover:-translate-y-2">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <i data-lucide="award" class="w-20 h-20 text-primary bg-primary/10 p-4 rounded-full"></i>
+                            <div>
+                                <h3 class="text-2xl font-black text-primary">Ms. Neetu Gupta</h3>
+                                <p class="text-secondary font-bold text-sm mb-4">Principal | M.A., MBA</p>
+                                <p class="text-gray-500 text-sm italic">Ensuring academic excellence and adherence to core values.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-12 text-center text-xs">
+        <img src="assets/icons/logo.webp" class="h-12 mx-auto mb-6 brightness-0 invert opacity-70">
+        <p>&copy; 2026 Gyan Vidya Peeth School, Sonipat.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>if (typeof lucide !== "undefined") { lucide.createIcons(); }</script>
+</body>
+</html>
