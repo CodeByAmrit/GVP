@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  --font-times: "Times New Roman", serif;
   /* Branding Colors */
   --color-primary: #2d5a27;
   --color-primary-light: #3d7a35;
   --color-primary-dark: #1e3d1a;
 
-  --color-secondary: #fbbf24;
+  --color-secondary: #efbf04;
   --color-secondary-peach: #ffedd5;
 
   --color-slate-hero: #f8fafc;
@@ -30,8 +31,13 @@
     color: #0f172a;
     -webkit-font-smoothing: antialiased;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
   }
 }

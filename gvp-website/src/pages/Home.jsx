@@ -4,7 +4,7 @@ import {
   ArrowRightCircle, Award, BookOpen, Users,
   GraduationCap, CheckCircle, MapPin, PhoneCall,
   Mail, Facebook, Instagram, Youtube, LayoutDashboard,
-  Binary, School, HeartHandshake, Quote
+  Binary, School, HeartHandshake, Quote, Eye
 } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 

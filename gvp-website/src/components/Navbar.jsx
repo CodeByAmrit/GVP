@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { MapPin, School, Eye } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,26 +30,47 @@ const Navbar = () => {
   ];
 
   const isHomePage = location.pathname === '/';
-  // On home page we might still want transparency at the very top, 
-  // but the final mockup shows a solid green header. 
-  // I will make it solid primary green with a gold border for that formal look.
-  const headerStyle = "bg-primary border-b border-secondary/70 py-2";
+
+  const headerStyle = "bg-primary border-b-3 border-secondary/70 gap-2 flex flex-col pb-2";
 
   return (
     <>
-      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${headerStyle}`}>
+      <header className={`top-0 w-full z-50 transition-all duration-300 ${headerStyle}`}>
+        <div className="bg-white text-primary text-[10px] md:text-xs font-bold uppercase tracking-widest border-b border-white/5 py-2">
+          <div className="container mx-auto px-6">
+            <ul className="flex flex-wrap justify-center items-center gap-x-8 gap-y-2">
+              <li className="flex items-center gap-2">
+                <MapPin className="w-3.5 h-3.5 text-secondary" />
+                <span>Affiliation No: 530041</span>
+              </li>
+              <li className="flex-1 min-w-[200px] md:min-w-[400px]">
+                <marquee behavior="smooth" direction="left" className="align-middle text-secondary italic">
+                  A PRESTIGIOUS ENGLISH MEDIUM CO-EDUCATIONAL CBSE AFFILIATED SENIOR SECONDARY SCHOOL
+                </marquee>
+              </li>
+              <li className="flex items-center gap-2">
+                <School className="w-3.5 h-3.5 text-secondary" />
+                <span>School Code: 40059</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Eye className="w-3.5 h-3.5 text-secondary" />
+                <span>Total Visitors: 9797</span>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-4 group">
-            <div className="bg-white/10 p-1 rounded-lg backdrop-blur-sm border border-white/10">
+            <div className="bg-transparent p-2">
               <img
-                src="/icons/logo.webp"
+                src="/icons/logo.svg"
                 alt="GVP Logo"
-                className="h-10 md:h-12 "
+                className="h-8 md:h-10 "
               />
             </div>
             <div className="hidden sm:block text-white">
-              <h1 className="font-heading font-black text-lg leading-none tracking-tight">GYAN VIDYA PEETH</h1>
-              <p className="text-[9px] tracking-[0.2em] font-extrabold uppercase mt-0.5 text-secondary">Lead • Innovate • Values</p>
+              <h1 className="text-secondary font-heading font-times text-2xl leading-none">GYAN VIDYA PEETH</h1>
+              <p className="text-[9px] tracking-[0.2em] font-extrabold uppercase mt-0.5 color-white">Lead • Innovate • Values</p>
             </div>
           </Link>
 
