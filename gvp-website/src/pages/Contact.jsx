@@ -24,7 +24,7 @@ const Contact = () => {
           >
             <div className="bg-white p-10 md:p-14 rounded-[2rem] border border-gray-100 shadow-xl overflow-hidden relative">
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-              <h3 className="text-3xl font-black text-primary mb-12 italic tracking-tight underline decoration-secondary decoration-8 underline-offset-8">Information Center</h3>
+              <h3 className="text-3xl font-black text-primary mb-12 tracking-tight underline decoration-secondary decoration-8 underline-offset-8">Information Center</h3>
 
               <div className="space-y-12">
                 {[

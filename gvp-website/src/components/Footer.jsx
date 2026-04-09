@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="flex gap-4 group">
                 <MapPin className="w-6 h-6 text-secondary shrink-0" />
                 <p className="text-sm font-medium leading-relaxed opacity-80">
-                  Gyan Vidya Peeth<br />
+                  GYAN VIDYA PEETH<br />
                   Near Kalupur Chungi, Rohtak Road,<br />
                   Sector 25, Sonipat, Haryana
                 </p>
@@ -33,7 +33,7 @@ const Footer = () => {
           {/* Column 2: Quick Links */}
           <div>
             <h4 className="text-xl font-heading font-black text-secondary mb-10 tracking-tight uppercase">Quick Links</h4>
-            <ul className="space-y-4 text-sm font-bold uppercase tracking-widest italic opacity-70">
+            <ul className="space-y-4 text-sm font-bold uppercase tracking-widest opacity-80">
               <li><Link to="/" className="hover:text-secondary transition-all">Home</Link></li>
               <li><Link to="/academics" className="hover:text-secondary transition-all">Academics</Link></li>
               <li><Link to="/facilities" className="hover:text-secondary transition-all">Admissions</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
           {/* Column 3: Social Links */}
           <div>
             <h4 className="text-xl font-heading font-black text-secondary mb-10 tracking-tight uppercase">Social Links</h4>
-            <ul className="space-y-4 text-sm font-bold uppercase tracking-widest italic opacity-70">
+            <ul className="space-y-4 text-sm font-bold uppercase tracking-widest opacity-80">
               <li><Link to="/admissions" className="hover:text-secondary transition-all">Apply Now</Link></li>
               <li><Link to="/contact" className="hover:text-secondary transition-all">Reception</Link></li>
               <li><Link to="#" className="hover:text-secondary transition-all">Privacy Policy</Link></li>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-white/5 text-center text-[10px] font-black uppercase tracking-[0.5em] text-white/40 italic">
+        <div className="pt-10 border-t border-white/5 text-center text-[10px] font-black uppercase tracking-[0.5em] text-white/40">
           <p>&copy; 2026 GYAN VIDYA PEETH. ALL RIGHTS RESERVED.</p>
         </div>
       </div>

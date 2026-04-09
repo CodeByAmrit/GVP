@@ -5,8 +5,8 @@ import SectionTitle from '../components/SectionTitle';
 
 const About = () => {
   const milestones = [
-    { year: "1990", title: "Founding Foundation", desc: "The first stone laying of the Gyan Vidya Peeth and the national of the giant foundation.", img: "/images/infrastructure/building.jpg" },
-    { year: "2005", title: "Expansion & New Campus", desc: "Gyan Vidya Peeth is the most unique new campus and new wing is international building architecture.", img: "/images/infrastructure/building.webp" },
+    { year: "1990", title: "Founding Foundation", desc: "The first stone laying of the GYAN VIDYA PEETH and the national of the giant foundation.", img: "/images/infrastructure/building.jpg" },
+    { year: "2005", title: "Expansion & New Campus", desc: "GYAN VIDYA PEETH is the most unique new campus and new wing is international building architecture.", img: "/images/infrastructure/building.webp" },
     { year: "2015", title: "Global Recognition", desc: "Students share an international conference and major students study in the international campuses.", img: "/images/toppers/jiya.jpg" },
     { year: "2024", title: "Future-Ready Curriculum", desc: "Robotics lab and advanced technical ecosystems are introduced to develop AI and robotics solution studies.", img: "/images/infrastructure/lab.jpg" }
   ];
@@ -33,9 +33,9 @@ const About = () => {
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-white">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl bg-black/30 backdrop-blur-md p-10 rounded-[2rem] border border-white/10">
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-secondary mb-6 italic tracking-tight underline decoration-secondary decoration-8 underline-offset-10">Our Vision & Mission</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-secondary mb-6 font-bold tracking-tight underline decoration-secondary decoration-8 underline-offset-10">Our Vision & Mission</h2>
             <p className="text-xl font-medium leading-relaxed opacity-90">
-              Gyan Vidya Peeth: Bridging Tradition with Future-Ready Education. Nurturing minds with timeless wisdom and modern innovation.
+              GYAN VIDYA PEETH: Bridging Tradition with Future-Ready Education. Nurturing minds with timeless wisdom and modern innovation.
             </p>
           </motion.div>
         </div>
@@ -44,7 +44,7 @@ const About = () => {
       {/* 2. Journey Header */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 md:px-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight mb-4 italic">A Journey of Excellence & Growth</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight mb-4">A Journey of Excellence & Growth</h2>
           <div className="w-24 h-1.5 bg-secondary mx-auto rounded-full" />
         </div>
       </section>
@@ -75,8 +75,8 @@ const About = () => {
                 </div>
                 <div className="pt-2">
                   <span className="text-3xl font-black text-primary/20 block mb-2">{ms.year} -</span>
-                  <h3 className="text-3xl font-heading font-black text-primary mb-4 tracking-tighter italic">{ms.title}</h3>
-                  <p className="text-lg text-gray-500 font-medium leading-relaxed italic">{ms.desc}</p>
+                  <h3 className="text-3xl font-heading font-black text-primary mb-4 tracking-tighter">{ms.title}</h3>
+                  <p className="text-lg text-gray-500 font-bold leading-relaxed">{ms.desc}</p>
                 </div>
               </motion.div>
             </div>
@@ -89,7 +89,7 @@ const About = () => {
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#2d5a27 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="text-center mb-24">
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary italic tracking-tight">Our Esteemed Leadership</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary tracking-tight">Our Esteemed Leadership</h2>
             <div className="w-20 h-2 bg-secondary/30 mx-auto mt-6 rounded-full" />
           </div>
 
@@ -103,8 +103,8 @@ const About = () => {
               <img src={leadership[0].img} className="w-80 h-96 object-cover rounded-[3rem] shadow-xl grayscale hover:grayscale-0 transition-all duration-700" alt="Principal" />
               <div className="flex-1">
                 <span className="text-secondary font-black text-xs uppercase tracking-widest block mb-2">{leadership[0].role}</span>
-                <h3 className="text-4xl font-heading font-black text-primary mb-6 tracking-tight italic underline decoration-secondary/30 decoration-8 underline-offset-10">{leadership[0].name}</h3>
-                <p className="text-gray-600 text-lg italic leading-relaxed font-medium">
+                <h3 className="text-4xl font-heading font-black text-primary mb-6 tracking-tight underline decoration-secondary/30 decoration-8 underline-offset-10">{leadership[0].name}</h3>
+                <p className="text-gray-600 text-lg leading-relaxed font-bold">
                   {leadership[0].bio}
                 </p>
               </div>
@@ -122,9 +122,9 @@ const About = () => {
                 className="bg-white p-10 rounded-[2rem] shadow-xl border border-primary/5 group"
               >
                 <img src={board.img} className="w-full h-72 object-cover rounded-[2.5rem] mb-8 grayscale group-hover:grayscale-0 transition-all duration-700" alt={board.name} />
-                <h4 className="text-xl font-heading font-black text-primary tracking-tight mb-2 italic">{board.name}</h4>
-                <p className="text-secondary font-black text-[10px] uppercase tracking-widest mb-4">{board.role}</p>
-                <p className="text-gray-500 text-sm italic leading-relaxed">{board.sub}</p>
+                <h4 className="text-xl font-heading font-black text-primary tracking-tight mb-2">{board.name}</h4>
+                <div className="w-10 h-0.5 bg-secondary mb-4" />
+                <p className="text-gray-500 text-sm font-bold leading-relaxed">{board.sub}</p>
               </motion.div>
             ))}
           </div>

@@ -1,18 +1,28 @@
+// components/SectionTitle.jsx
+import React from 'react';
 import { motion } from 'framer-motion';
 
-const SectionTitle = ({ children, subtitle, light = false }) => (
-  <motion.div 
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    className="text-center mb-16 px-4"
-  >
-    <h2 className={`text-3xl md:text-5xl font-heading font-black mb-6 tracking-tight ${light ? 'text-white' : 'text-primary'}`}>
-      {children}
-    </h2>
-    {subtitle && <p className={`max-w-xl mx-auto text-base md:text-lg font-medium leading-relaxed ${light ? 'text-white/70' : 'text-gray-500'}`}>{subtitle}</p>}
-    <div className="w-16 h-1.5 bg-secondary mx-auto mt-8 rounded-full" />
-  </motion.div>
-);
+const SectionTitle = ({ children, subtitle, centered = true }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className={`mb-12 md:mb-16 ${centered ? 'text-center' : ''}`}
+    >
+      {subtitle && (
+        <span className="inline-block px-4 py-1.5 bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-wider rounded-full mb-4">
+          {subtitle}
+        </span>
+      )}
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-primary leading-tight">
+        {children}
+      </h2>
+      {centered && (
+        <div className="w-20 h-1 bg-secondary rounded-full mt-6 mx-auto" />
+      )}
+    </motion.div>
+  );
+};
 
 export default SectionTitle;

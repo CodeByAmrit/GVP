@@ -6,7 +6,7 @@ import {
   User, Users, GraduationCap
 } from 'lucide-react';
 
-const Admissions = () => {
+const Apply = () => {
   const [step, setStep] = useState(1);
   const totalSteps = 3;
 
@@ -88,24 +88,24 @@ const Admissions = () => {
                       <h2 className="text-3xl font-heading font-black text-primary">Student Details</h2>
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="md:col-span-2 space-y-2">
-                          <label className="input-label">Full Name *</label>
-                          <input type="text" className="compact-input" placeholder="Legal full name" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Full Name *</label>
+                          <input type="text" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="Legal full name" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Date of Birth *</label>
-                          <input type="date" className="compact-input" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Date of Birth *</label>
+                          <input type="date" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Gender *</label>
-                          <select className="compact-input">
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Gender *</label>
+                          <select className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none">
                             <option>Male</option>
                             <option>Female</option>
                             <option>Other</option>
                           </select>
                         </div>
                         <div className="md:col-span-2 space-y-2">
-                          <label className="input-label">Applying for Grade *</label>
-                          <select className="compact-input">
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Applying for Grade *</label>
+                          <select className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none">
                             <option>Foundation Wing (Pre-Nur to II)</option>
                             <option>Middle Wing (III to VIII)</option>
                             <option>Senior Wing (IX to XII)</option>
@@ -126,28 +126,28 @@ const Admissions = () => {
                       <h2 className="text-3xl font-heading font-black text-primary">Parent/Guardian Information</h2>
                       <div className="grid md:grid-cols-2 gap-6">
                          <div className="space-y-2">
-                          <label className="input-label">Father's Full Name *</label>
-                          <input type="text" className="compact-input" placeholder="Enter name" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Father's Full Name *</label>
+                          <input type="text" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="Enter name" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Mother's Full Name *</label>
-                          <input type="text" className="compact-input" placeholder="Enter name" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Mother's Full Name *</label>
+                          <input type="text" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="Enter name" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Primary Phone *</label>
-                          <input type="tel" className="compact-input" placeholder="+91 XXXX XXXXX" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Primary Phone *</label>
+                          <input type="tel" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="+91 XXXX XXXXX" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Alternative Phone</label>
-                          <input type="tel" className="compact-input" placeholder="+91 XXXX XXXXX" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Alternative Phone</label>
+                          <input type="tel" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="+91 XXXX XXXXX" />
                         </div>
                         <div className="md:col-span-2 space-y-2">
-                          <label className="input-label">Email Address *</label>
-                          <input type="email" className="compact-input" placeholder="example@email.com" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Email Address *</label>
+                          <input type="email" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="example@email.com" />
                         </div>
                         <div className="md:col-span-2 space-y-2">
-                          <label className="input-label">Residential Address *</label>
-                          <textarea className="compact-input h-24 pt-4" placeholder="Full address" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Residential Address *</label>
+                          <textarea className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none h-24 pt-4" placeholder="Full address" />
                         </div>
                       </div>
                     </motion.div>
@@ -164,16 +164,16 @@ const Admissions = () => {
                       <h2 className="text-3xl font-heading font-black text-primary">Academic History</h2>
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="md:col-span-2 space-y-2">
-                          <label className="input-label">Previous School Name (if any)</label>
-                          <input type="text" className="compact-input" placeholder="Enter school name" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Previous School Name (if any)</label>
+                          <input type="text" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="Enter school name" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Last Class Attended</label>
-                          <input type="text" className="compact-input" placeholder="Grade level" />
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Last Class Attended</label>
+                          <input type="text" className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none" placeholder="Grade level" />
                         </div>
                         <div className="space-y-2">
-                          <label className="input-label">Transfer Certificate (TC) Available?</label>
-                          <select className="compact-input">
+                          <label className="input-label font-bold text-xs uppercase tracking-wider text-gray-500">Transfer Certificate (TC) Available?</label>
+                          <select className="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-secondary focus:outline-none">
                             <option>Yes</option>
                             <option>No, will provide later</option>
                             <option>Not applicable</option>
@@ -213,7 +213,7 @@ const Admissions = () => {
                     </button>
                     <button 
                       onClick={step === totalSteps ? () => alert("Application Submitted!") : nextStep}
-                      className="flex items-center gap-4 px-10 py-4 bg-primary text-white font-black text-sm rounded-xl shadow-xl hover:bg-emerald-950 active:scale-95 transition-all group"
+                      className="flex items-center gap-4 px-10 py-4 bg-primary text-white font-black text-sm rounded-xl shadow-xl hover:bg-secondary active:scale-95 transition-all group"
                     >
                       {step === totalSteps ? "Submit Enrollment" : "Next Step"}
                       <ChevronRight className="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" />
@@ -292,4 +292,4 @@ const Admissions = () => {
   );
 };
 
-export default Admissions;
+export default Apply;

@@ -57,7 +57,7 @@ const Academics = () => {
               >
                 <wing.icon className={`w-14 h-14 mb-8 ${wing.dark ? 'text-secondary' : 'text-' + wing.color}`} />
                 <h3 className="text-2xl font-black mb-4 tracking-tight">{wing.title}</h3>
-                <p className={`text-sm italic leading-relaxed mb-8 ${wing.dark ? 'text-white/70' : 'text-gray-500'}`}>{wing.desc}</p>
+                <p className={`text-sm font-bold leading-relaxed mb-8 ${wing.dark ? 'text-white/70' : 'text-gray-500'}`}>{wing.desc}</p>
                 <div className="mt-auto">
                   <span className={`px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest ${wing.dark ? 'bg-white/10 text-secondary' : 'bg-primary/10 text-primary'
                     }`}>

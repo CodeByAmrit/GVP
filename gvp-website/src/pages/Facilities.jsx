@@ -45,7 +45,7 @@ const Facilities = () => {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-7xl font-heading font-black tracking-tight mb-6 italic"
+            className="text-4xl md:text-7xl font-heading font-black tracking-tight mb-6 font-bold"
           >
             Infrastructure for <span className="text-secondary underline decoration-secondary/30 underline-offset-8">Leaders.</span>
           </motion.h1>
@@ -89,12 +89,13 @@ const Facilities = () => {
                 </div>
 
                 <div className="absolute bottom-12 left-12 right-12 text-white">
-                  <h4 className="text-3xl md:text-4xl font-heading font-black mb-4 tracking-tighter italic">{item.title}</h4>
-                  <p className="text-white/70 text-base md:text-lg font-medium leading-relaxed mb-8 max-w-xl italic opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700">
-                    {item.desc}
+                  <h4 className="text-3xl md:text-4xl font-heading font-black mb-4 tracking-tighter">{item.title}</h4>
+                  <p className="text-white/70 text-base md:text-lg font-bold leading-relaxed mb-8 max-w-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700">
+                    {item.description}
                   </p>
-                  <p className="text-secondary font-black text-xs uppercase tracking-[0.2em] flex items-center gap-3 italic">
-                    Explore Inventory <ArrowRightCircle className="w-5 h-5" />
+                  <p className="text-secondary font-black text-xs uppercase tracking-[0.2em] flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4" />
+                    Advanced Feature Active
                   </p>
                 </div>
               </motion.div>
@@ -111,9 +112,9 @@ const Facilities = () => {
           className="bg-primary p-12 md:p-24 rounded-[4.5rem] text-white flex flex-col lg:flex-row items-center justify-between gap-16 overflow-hidden relative border-l-[1rem] border-secondary shadow-2xl shadow-primary/30"
         >
           <div className="relative z-10 flex-1">
-            <span className="text-secondary font-black text-xs uppercase tracking-widest block mb-6 italic border-l-4 border-secondary pl-4">The Student Guard</span>
-            <h3 className="text-4xl md:text-6xl font-heading font-black mb-8 italic tracking-tight leading-tight">A Shield for Every <br /><span className="text-secondary">Student Journey.</span></h3>
-            <p className="text-white/60 max-w-xl text-lg md:text-xl font-medium leading-relaxed mb-12 italic">
+            <span className="text-secondary font-black text-xs uppercase tracking-widest block mb-6 font-bold border-l-4 border-secondary pl-4">The Student Guard</span>
+            <h3 className="text-4xl md:text-6xl font-heading font-black mb-8 tracking-tight leading-tight">A Shield for Every <br /><span className="text-secondary">Student Journey.</span></h3>
+            <p className="text-white/60 max-w-xl text-lg md:text-xl font-bold leading-relaxed mb-12">
               Physical safety is our foundation. From high-definition monitoring to real-time transport tracking, we ensure total peace of mind for every parent.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
@@ -134,7 +135,7 @@ const Facilities = () => {
           </div>
           <div className="lg:w-1/3 relative z-10 text-center lg:text-right">
             <div className="bg-white/5 backdrop-blur-3xl p-10 rounded-[3rem] border border-white/10 shadow-inner">
-              <p className="text-6xl font-black text-secondary leading-none mb-2 tracking-tighter italic">100%</p>
+              <p className="text-6xl font-black text-secondary leading-none mb-2 tracking-tighter">100%</p>
               <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-40">Safety Compliance</p>
               <button className="mt-10 px-10 py-5 bg-secondary text-primary font-black rounded hover:bg-white transition-all w-full text-xs tracking-widest uppercase">
                 View Safety Specs
