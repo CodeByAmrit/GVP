@@ -160,7 +160,7 @@ const Navbar = () => {
               </motion.div>
 
               <div className="hidden sm:block">
-                <h1 className="font-display text-xl font-bold leading-tight transition-colors duration-300 text-primary">
+                <h1 className="font-display text-xl font-bolder leading-tight transition-colors duration-300 text-primary">
                   GYAN VIDYA PEETH
                 </h1>
                 <p className="text-[10px] font-semibold tracking-[0.3em] uppercase transition-colors duration-300 text-gray-500">
@@ -181,8 +181,8 @@ const Navbar = () => {
                   <Link
                     to={item.path}
                     className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center gap-1 group ${location.pathname === item.path
-                        ? 'text-secondary bg-amber-50'
-                        : 'text-gray-700 hover:text-secondary hover:bg-gray-50'
+                      ? 'text-secondary bg-amber-50'
+                      : 'text-gray-700 hover:text-secondary hover:bg-gray-50'
                       }`}
                   >
                     {item.name}
